@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:pro_clubs/root_app.dart';
 import 'package:pro_clubs/playstation4_page.dart';
 import 'package:pro_clubs/playstation5_page.dart';
 import 'package:pro_clubs/selection_index.dart';
@@ -251,6 +252,8 @@ class _CreateUserState extends State<CreateUser> {
                   // ),
                 ),
                 onPressed: () async {
+                  Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => RootApp()));
                   // FocusScope.of(context).unfocus();
                   // if (nameController.text.trim().isNotEmpty &&
                   //     jobTitleController.text.trim().isNotEmpty &&
